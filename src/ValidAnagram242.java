@@ -17,9 +17,9 @@ public class ValidAnagram242 {
 //        return Arrays.equals(sortedInputA, sortedInputB);
 //    }
 
-    /* use HashMap for input A and B to count each letter
-    * decrease the count of each letter of A by comparing B if existed
-    * if any of letter has more than 0, return false otherwise, true
+    /* use HashMap for input A to count each letter
+    * decrease the count of each letter of A by comparing each letter of B if existed
+    * if any of letter of A is not 0, return false otherwise, true
     * O(n) but space-wise it is worse*/
     public static boolean isAnagram(String s, String t) {
         Map<Character, Integer> lettersInputA = new HashMap<>();
